@@ -20,6 +20,8 @@ def set_properties(project):
 @init
 def initialize(project):
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src', 'main', 'python'))
+    project.set_property("dir_source_main_python", "src/main/python")
+    project.set_property("dir_source_unittest_python", "src/unittest/python")
 
 @task
 def run_app():
